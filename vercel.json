@@ -1,0 +1,16 @@
+
+
+{
+  "builds": [
+    {
+      "src": "expense_tracker.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "expense_tracker.py"
+    }
+  ]
+}
